@@ -2,10 +2,15 @@ package main.visitor.figure;
 
 public abstract class Figure {
 
-    public Figure(String description) {
-    }
+    private String description;
     
-    public abstract double area();
-    public abstract double numberOfSides();
+    public String getDescription(){
+    	return description;
+    }
+	
+    public Figure(String description) {}
+
+    
+    public void accept(Visitor visitor){}
 
 }

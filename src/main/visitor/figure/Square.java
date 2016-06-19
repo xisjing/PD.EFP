@@ -3,30 +3,29 @@ package main.visitor.figure;
 public class Square extends Figure {
 
     private double side;
+    
+    
 
     public Square(String description, double side) {
         super(description);
         this.side = side;
     }
+    
+    public double getSide() {
+		
+		return this.side;
+	}
 
     @Override
-    public double area() {
-        return side * side;
-    }
-
-    @Override
-    public double numberOfSides() {
-        return 4;
-    }
+	public void accept(Visitor visitor){
+		visitor.visitSquare(this);
+	}
 
     @Override
     public String toString() {
         return super.toString();
     }
 
-	public int getSide() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 }

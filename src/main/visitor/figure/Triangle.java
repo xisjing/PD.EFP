@@ -1,6 +1,7 @@
 package main.visitor.figure;
 
 public class Triangle extends Figure {
+	
     private double base;
 
     private double height;
@@ -10,30 +11,26 @@ public class Triangle extends Figure {
         this.base = base;
         this.height = height;
     }
+    
+    public double getBase() {
+		return this.base;
+	}
 
-    @Override
-    public double area() {
-        return base * height * 0.5;
-    }
-
-    @Override
-    public double numberOfSides() {
-        return 3;
-    }
-
+	public double getHeight() {
+		return this.height;
+		
+	}
+	
+	 @Override
+	    public void accept(Visitor visitor){
+			visitor.visitTriangle(this);
+		}
+ 
     @Override
     public String toString() {
         return super.toString();
     }
 
-	public int getBase() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 }
