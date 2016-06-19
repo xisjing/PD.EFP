@@ -26,4 +26,14 @@ public class Triangle extends Figure {
         return super.toString();
     }
 
+	public int getBase() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

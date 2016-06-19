@@ -24,4 +24,9 @@ public class Square extends Figure {
         return super.toString();
     }
 
+	public int getSide() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

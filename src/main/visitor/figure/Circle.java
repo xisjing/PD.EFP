@@ -19,4 +19,9 @@ public class Circle extends Figure {
         return Double.POSITIVE_INFINITY;
     }
 
+	public int getradius() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
