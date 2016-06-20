@@ -5,10 +5,17 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import main.composite.expression.Dividir;
+import main.composite.expression.Expresion;
+import main.composite.expression.Multiplicar;
+import main.composite.expression.Numero;
+import main.composite.expression.Restar;
+import main.composite.expression.Sumar;
+
 
 public class ExpressionTest {
 	
-	/*
+	
     private Expresion exp1, exp2, exp3, exp4, exp5, exp6;
 
     @Before
@@ -57,5 +64,5 @@ public class ExpressionTest {
         assertEquals("((3-((4/2)*3))+4)", this.exp6.toString());
     }
     
-    */
+    
 }
