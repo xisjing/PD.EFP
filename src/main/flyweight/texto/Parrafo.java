@@ -16,14 +16,15 @@ public class Parrafo extends Composite{
 
 	@Override
 	protected void addComposite(Componente componente) {
-		this.getComponentes().add(componente);
+		throw new UnsupportedOperationException("No se pueden añadir a parrafo");
+		
 		
 	}
 
 	@Override
 	protected void noAddComposite(Componente componente) {
-		throw new UnsupportedOperationException("No se pueden añadir a parrafo");
-		
+		this.getComponentes().add(componente);
+			
 	}
 
 }
