@@ -18,23 +18,23 @@ public class TextoTest {
 
     @Before
     public void ini() {
-        //H = FactoriaCaracter.getFactoria().get('H');
-        //o = FactoriaCaracter.getFactoria().get('o');
-        //l = FactoriaCaracter.getFactoria().get('l');
-        //a = FactoriaCaracter.getFactoria().get('a');
-        //pf = new Parrafo();
+        H = FactoriaCaracter.getFactoria().get('H');
+        o = FactoriaCaracter.getFactoria().get('o');
+        l = FactoriaCaracter.getFactoria().get('l');
+        a = FactoriaCaracter.getFactoria().get('a');
+        pf = new Parrafo();
         pf.add(H);
         pf.add(o);
         pf.add(l);
         pf.add(a);
-        //txt = new Texto();
+        txt = new Texto();
         txt.add(pf);
         txt.add(pf);
     }
 
     @Test
     public void testCaracterFlyweight() {
-        //assertSame(H, FactoriaCaracter.getFactoria().get('H'));
+        assertSame(H, FactoriaCaracter.getFactoria().get('H'));
     }
 
     @Test
