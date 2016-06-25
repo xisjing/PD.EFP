@@ -1,6 +1,6 @@
 package main.store;
 
-public class Store {
+public abstract class Store {
 
     //TODO a fata de implementar
 
@@ -15,4 +15,7 @@ public class Store {
         return null;
     }
 
+
+		
+	
 }
