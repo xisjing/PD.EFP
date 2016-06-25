@@ -1,19 +1,32 @@
 package main.store;
 
-public abstract class Store {
+public class Store {	
+		
+	private StoreState storeState;
+	
+	
+	public StoreState getStoreState() {
+		return storeState;
+	}
 
-    //TODO a fata de implementar
-
+	public void setStoreState(StoreState storeState) {
+		this.storeState = storeState;
+	}
+		
     // Se almacena un objeto
     public void write(String key, String value) {
-        //TODO a falta de implementar
+    	storeState.write(this);
     }
 
     // Se lee un objeto
-    public String read(String key) {
-        //TODO a falta de implementar
-        return null;
+    public void read(String key) {
+      storeState.read(this);;
     }
+
+	
+    
+   
+	
 
 
 		
