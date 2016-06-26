@@ -1,6 +1,7 @@
 package main.store.request;
 
 public class PeticionRed {
+	
     public void red1() {
         // Se realiza la peticion 1
         System.out.println("[INFO] PeticionRed:red1");
